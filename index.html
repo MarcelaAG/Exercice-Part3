@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Formulaire Part_3</title>
+</head>
+<body>
+    <form>
+        <!--First block-->
+       <fieldset class="blue">
+       <legend class="part1">Votre idéntité</legend>
+           <ol>
+              <li><label for="nom">Nom :</label>
+              <input type="text" id="nom" name="nom" placeholder="Nom"></li>
+              <li><label for="prénom">Prénom</label>
+              <input type="text" id="prénom" name="prénom" placeholder="Prénom"></li>
+              <li><label for="email">Adresse mail :</label>
+              <input type="email" id="email" placeholder="Adresse mail"></li>
+           </ol>
+       </fieldset>
+           <!--Second block-->
+      <fieldset class="purple">
+        <legend class="part2">Adresse de livraison</legend>
+            <ol>
+             <li><label for="Adresse">Adresse :</label>
+                <textarea placeholder="" id="Adresse" cols="20" rows="4"></textarea>
+             </li>
+             <li><label for="code_postal">Code Postal :</label>
+             <input type="number" id="code_postal" name="code postal" placeholder="Code Postal"></li>
+             <li><label for="ville">Ville:</label>
+             <input type="text" id="ville" name="ville" placeholder="Ville"></li>
+          </ol>
+      </fieldset>
+          <!--Third block-->
+        <fieldset class="pink">
+        <legend class="part3">Information de réglement</legend>
+          <ol>
+             <li><label for="type_de_carte_bancaire">Type de carte bancaire :</label></li>
+             
+             <li><input type="radio" id="Visa" name="type de carte bancaire" value="visa">
+                 <label for="Visa">VISA</label></li>
+             <li><input type="radio" id="MasterCard" name="type de carte bancaire">
+                 <label for="MasterCard">MasterCard</label></li>
+             
+                 <li><label for="numéro_de_carte">Numéro de Carte</label>
+             <input type="number" id="numéro_de_carte" placeholder="Numéro de carte"></li>
+             <li><label for="code_de_securité">Code de Sécurité</label>
+             <input type="text" id="code_de_securité" placeholder="Code de sécurité"></li>
+             <li><label for="nom_du_titulaire">Nom du titulaire</label>
+             <input type="text" id="nom_du_titulaire" placeholder="Nom du titulaire"></li>
+          </ol>
+        </fieldset>
+          <button type="button">J'achète !</button>
+    </form>
+ </body>
+</html>
